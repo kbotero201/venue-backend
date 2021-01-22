@@ -15,8 +15,8 @@ Venue.destroy_all
 imgPlaceHolder = "https://via.placeholder.com/150"
 
 
-kevin = User.create(name: "Kevin", favorite: "PlaceHolder")
-jason = User.create(name: "Jason", favorite: "PlaceHolder")
+kevin = User.create(name: "Kevin", favorite: "PlaceHolder", password: "123")
+jason = User.create(name: "Jason", favorite: "PlaceHolder", password: "123")
 
 msg = Venue.create(name: "Madison Square Garden", location: "manhattan", description: "The World's Most Famous Arena", image: imgPlaceHolder) 
 
