@@ -20,8 +20,8 @@ jason = User.create(name: "Jason", favorite: "PlaceHolder", password: "123")
 
 msg = Venue.create(name: "Madison Square Garden", location: "manhattan", description: "The World's Most Famous Arena", image: imgPlaceHolder) 
 
-yeezy = Event.create(event_name: "Yeezy is Back", performer_name: "Kanye West", description: "Who knows...", image: imgPlaceHolder, venue_id: msg.id)
-postponed = Event.create(event_name: "Where do we Go?", performer_name: "Billie Eilish", description: "Appreantly this was postponed", image: imgPlaceHolder, venue_id: msg.id)
+yeezy = Event.create(event_name: "Yeezy is Back", performer_name: "Kanye West", event_type: "Concert", description: "Who knows...", image: imgPlaceHolder, venue_id: msg.id)
+postponed = Event.create(event_name: "Where do we Go?", performer_name: "Billie Eilish", event_type: "Concert", description: "Appreantly this was postponed", image: imgPlaceHolder, venue_id: msg.id)
 
 
 ticket1 = Ticket.create(user_id: kevin.id, event_id: yeezy.id)

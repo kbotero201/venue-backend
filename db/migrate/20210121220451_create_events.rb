@@ -3,6 +3,7 @@ class CreateEvents < ActiveRecord::Migration[6.1]
     create_table :events do |t|
       t.string :event_name
       t.string :performer_name
+      t.string :event_type
       t.string :description
       t.string :image
       # t.belongs_to :venue, null: false, foreign_key: true
