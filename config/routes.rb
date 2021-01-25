@@ -11,13 +11,13 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :tickets, only: [:show, :index]
+      resources :tickets, only: [:show, :index, :create, :destroy]
     end
   end
 
   namespace :api do
     namespace :v1 do
-      resources :users, only: [:show, :index]
+      resources :users, only: [:show, :index, :create]
     end
   end
 

@@ -10,5 +10,16 @@ class Api::V1::UsersController < ApplicationController
       render json: users#, except:[:updated_at, :created_at] 
     end 
 
+    def create 
+      user = User.create(user_params)
+      render json: user
+    end 
+
+    private 
+
+    def user_params
+      params.permit(:name, :favorite, :password)
+    end 
+
 end
 
