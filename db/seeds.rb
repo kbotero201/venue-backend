@@ -15,7 +15,7 @@ Venue.destroy_all
 imgPlaceHolder = "https://via.placeholder.com/150"
 
 
-kevin = User.create(name: "Kevin", favorite: "Concerts", password: "123")
+kevin = User.create(name: "Kevin", favorite: "Hip-Hop", password: "123")
 jason = User.create(name: "Jason", favorite: "Rock", password: "123")
 
 msg = Venue.create(name: "Madison Square Garden", location: "manhattan", description: "The World's Most Famous Arena", image: "../images/msg.jpg") 
@@ -38,6 +38,29 @@ danceWithDead = Event.create(event_name: "Loved to Death", performer_name: "Danc
 kkb = Event.create(event_name: "StereoGum", performer_name: "Kero Kero Bonito", event_type: "Synth-Pop", 
                 description: "Kero Kero Bonito are a British indie pop band from London. The band consists of vocalist Sarah Midori Perry and producers and multi-instrumentalists Gus Lobban and Jamie Bulled. Their name's meaning is intentionally ambiguous, with one derivation from the Japanese onomatopoeic words for frog croaks and a type of fish.", 
                 image: "../images/kkb.jpg", venue_id: bkySteel.id)
+
+uzi = Event.create(event_name: "Luv Is Raging", performer_name: "Lil Uzi Vert", event_type: "Hip-Hop", 
+    description: "Luv Is Rage 2 is the debut studio album by American rapper Lil Uzi Vert. It was released on August 25, 2017, through Generation Now and distributed by Atlantic Records. The album serves as a sequel to Uzi's commercial debut mixtape Luv Is Rage.", 
+    image: "../images/uzi.png", venue_id: msg.id
+)
+pump = Event.create(event_name: "Gonna Lose Some Braincells", performer_name: "Lil Pump", event_type: "Hip-Hop", 
+    description: 'Lil Pump rose to popularity in 2017 with the single "Gucci Gang", which peaked at number 3 on the Billboard Hot 100 and was certified five-times platinum by the Recording Industry Association of America. The single was featured on his debut album Lil Pump (2017), which peaked at number 3 on the US Billboard 200. He has since released the singles "I Love It" (with Kanye West), "Esskeetit", "Drug Addicts", "Butterfly Doors", "Racks on Racks", "Be Like Me" (featuring Lil Wayne), and "Welcome to the Party" from the Deadpool 2 soundtrack.', 
+    image: "../images/pump.png", venue_id: msg.id
+)
+
+deadmau = Event.create(event_name: "The Cube", performer_name: "Deadmau5", event_type: "EDM", 
+    description: "Im pretty sure my friend was trying to scalp tickects to this event about a year ago but couldn't sell all of them so he took me and his brother. Anyway he messaged me last minute and I went with him, I couldn't believe deadmau5 was still touring.", 
+    image: "../images/deadmau.jpg", venue_id: bkySteel.id
+)
+
+purityRing = Event.create(event_name: "Tour de Womb", performer_name: "Purity Ring", event_type: "Synth-Pop", 
+    description: "Purity Ring is a Canadian electronic pop band from Edmonton, Alberta, Canada, formed in 2010. The band consists of vocalist Megan James and multi-instrumentalist/producer Corin Roddick. They released their debut album Shrines in 2012 to critical acclaim, followed by Another Eternity in 2015", 
+    image: "../images/purityring.jpg", venue_id: kf.id
+)
+
+
+
+
 
 
 studentTeacherShowdown = Event.create(event_name: "Flatiron Brawl 2021", performer_name: "Lazzzer Ian", event_type: "Party", description: "Ian fists are rated E for Everyone", image: "../images/Ian1.png", venue_id: flatiron.id)
