@@ -22,7 +22,7 @@ msg = Venue.create(name: "Madison Square Garden", location: "manhattan", descrip
 flatiron = Venue.create(name: "Flatiron Campus", location: "manhattan", description: "The Best Bootcamp", image: "../images/flatiron.jpeg") 
 bkySteel = Venue.create(name: "Brooklyn Steel", location: "East Williamsburg", description: "'Best medium size venue imo' - Jason", image: "../images/bkynSteel.jpg")
 kf = Venue.create(name: "Knitting Factory", location: "Williamsburg", description: "An outpost of a small national concert venue chain with an attached adults-only restaurant.", image: "../images/kf.jpg" )
-# bc = Venue.create(name: "Barclays Center", location: "Prospect Heights", description: "Brooklyn Nets Plays Here", image: "..image/")
+bc = Venue.create(name: "Barclays Center", location: "Prospect Heights", description: "Brooklyn Nets Plays Here", image: "..image/bc.png")
 
 yeezy = Event.create(event_name: "Yeezy is Back", performer_name: "Kanye West", event_type: "Hip-Hop", description: "Who knows...", image: "../images/kanyewest.jpg", venue_id: msg.id)
 postponed = Event.create(event_name: "Where do we Go?", performer_name: "Billie Eilish", event_type: "Pop", description: "Appreantly this was postponed", image: "../images/billie.jpg", venue_id: msg.id)
@@ -58,8 +58,15 @@ purityRing = Event.create(event_name: "Tour de Womb", performer_name: "Purity Ri
     image: "../images/purityring.jpg", venue_id: kf.id
 )
 
+xcx = Event.create(event_name: "HyperPop Rising", performer_name: "Charli XCX", event_type: "Pop", 
+    description: "Charli XCX began writing her second album in mid-2013, saying she initially wanted to go to India to record, but later decided she wanted to record in France, she said: Two months ago, I wanted to go to India and record it, and now I want to record it in France. So I feel like nothing is definite – like, I feel very all-over-the-place at the moment. But at the moment, my heart's set on going to France and recording it, but that was different two months ago, so who knows what's going to happen?", 
+    image: "../images/xcx.png", venue_id: bc.id
+)
 
-
+bjork = Event.create(event_name: "Utopia", performer_name: "Björk", event_type: "Pop", 
+description: "Björk Guðmundsdóttir OTF is an Icelandic singer, songwriter, record producer, actress, and DJ. Over her four-decade career, she has developed an eclectic musical style that draws on a range of influences and genres spanning electronic, pop, experimental, trip hop, classical, and avant-garde music.", 
+image: "../images/xcx.png", venue_id: bc.id
+)
 
 
 
