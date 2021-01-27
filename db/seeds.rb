@@ -21,7 +21,7 @@ jason = User.create(name: "Jason", favorite: "Rock", password: "123")
 msg = Venue.create(name: "Madison Square Garden", location: "manhattan", description: "The World's Most Famous Arena", image: "../images/msg.jpg") 
 flatiron = Venue.create(name: "Flatiron Campus", location: "manhattan", description: "The Best Bootcamp", image: "../images/flatiron.jpeg") 
 bkySteel = Venue.create(name: "Brooklyn Steel", location: "East Williamsburg", description: "'Best medium size venue imo' - Jason", image: "../images/bkynSteel.jpg")
-kf = Venue.create(name: "Knitting Factory", location: "Williamsburg", description: "An outpost of a small national concert venue chain with an attached adults-only restaurant.", image: "..images/kf.jpg" )
+kf = Venue.create(name: "Knitting Factory", location: "Williamsburg", description: "An outpost of a small national concert venue chain with an attached adults-only restaurant.", image: "../images/kf.jpg" )
 # bc = Venue.create(name: "Barclays Center", location: "Prospect Heights", description: "Brooklyn Nets Plays Here", image: "..image/")
 
 yeezy = Event.create(event_name: "Yeezy is Back", performer_name: "Kanye West", event_type: "Hip-Hop", description: "Who knows...", image: "../images/kanyewest.jpg", venue_id: msg.id)
@@ -65,7 +65,6 @@ purityRing = Event.create(event_name: "Tour de Womb", performer_name: "Purity Ri
 
 studentTeacherShowdown = Event.create(event_name: "Flatiron Brawl 2021", performer_name: "Lazzzer Ian", event_type: "Party", description: "Ian fists are rated E for Everyone", image: "../images/Ian1.png", venue_id: flatiron.id)
 
-# themidnight = Event.create()
 
 
 ticket1 = Ticket.create(user_id: kevin.id, event_id: yeezy.id)
