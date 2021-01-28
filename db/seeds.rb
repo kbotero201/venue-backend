@@ -22,7 +22,7 @@ msg = Venue.create(name: "Madison Square Garden", location: "manhattan", descrip
 flatiron = Venue.create(name: "Flatiron Campus", location: "manhattan", description: "The Best Bootcamp", image: "../images/flatiron.jpeg") 
 bkySteel = Venue.create(name: "Brooklyn Steel", location: "East Williamsburg", description: "'Best medium size venue imo' - Jason", image: "../images/bkynSteel.jpg")
 kf = Venue.create(name: "Knitting Factory", location: "Williamsburg", description: "An outpost of a small national concert venue chain with an attached adults-only restaurant.", image: "../images/kf.jpg" )
-bc = Venue.create(name: "Barclays Center", location: "Prospect Heights", description: "Brooklyn Nets Plays Here", image: "..image/bc.png")
+bc = Venue.create(name: "Barclays Center", location: "Prospect Heights", description: "Brooklyn Nets Plays Here", image: "../images/bc.png")
 
 yeezy = Event.create(event_name: "Yeezy is Back", performer_name: "Kanye West", event_type: "Hip-Hop", description: "Who knows...", image: "../images/kanyewest.jpg", venue_id: msg.id)
 postponed = Event.create(event_name: "Where do we Go?", performer_name: "Billie Eilish", event_type: "Pop", description: "Appreantly this was postponed", image: "../images/billie.jpg", venue_id: msg.id)
@@ -64,10 +64,25 @@ xcx = Event.create(event_name: "HyperPop Rising", performer_name: "Charli XCX", 
 )
 
 bjork = Event.create(event_name: "Utopia", performer_name: "Björk", event_type: "Pop", 
-description: "Björk Guðmundsdóttir OTF is an Icelandic singer, songwriter, record producer, actress, and DJ. Over her four-decade career, she has developed an eclectic musical style that draws on a range of influences and genres spanning electronic, pop, experimental, trip hop, classical, and avant-garde music.", 
-image: "../images/xcx.png", venue_id: bc.id
+    description: "Björk Guðmundsdóttir OTF is an Icelandic singer, songwriter, record producer, actress, and DJ. Over her four-decade career, she has developed an eclectic musical style that draws on a range of influences and genres spanning electronic, pop, experimental, trip hop, classical, and avant-garde music.", 
+    image: "../images/bjork.jpg", venue_id: bc.id
 )
 
+trippie = Event.create(event_name: "Love Scars", performer_name: "Trippie Redd", event_type: "Hip-Hop", 
+    description: "Michael Lamar White IV, known professionally as Trippie Redd, is an American rapper, singer, and songwriter. His debut mixtape A Love Letter to You and its lead single Love Scars propelled him to popularity.", 
+    image: "../images/redd.jpg", venue_id: bc.id
+)
+
+pert= Event.create(event_name: "Rise of The Synth", performer_name: "Perturbator", event_type: "EDM", 
+    description: "James Kent, known by his stage name Perturbator, is a French synthwave musician from Paris.", 
+   image: "../images/pert.jpg", venue_id: bkySteel.id
+)
+
+
+ant= Event.create(event_name: "Opportunity Meets Preparation", performer_name: "Anthony Rubbo", event_type: "Rock", 
+    description: "Anthony is a professional guitarist in New York City. He's performed across the U.S. with pop artists and musicals; from Coachella to Broadway.He has also maintained a steady roster of private students and has been on faculty at several teaching studios for more than a decade.", 
+   image: "../images/ant.png", venue_id: kf.id
+)
 
 
 studentTeacherShowdown = Event.create(event_name: "Flatiron Brawl 2021", performer_name: "Lazzzer Ian", event_type: "Party", description: "Ian fists are rated E for Everyone", image: "../images/Ian1.png", venue_id: flatiron.id)
